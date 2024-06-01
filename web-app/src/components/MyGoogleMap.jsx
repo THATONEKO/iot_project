@@ -42,7 +42,7 @@ const MyGoogleMap = ({ searchQuery, setLocationName }) => {
   const fetchLocationName = async (latitude, longitude) => {
     try {
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=YOUR_GOOGLE_MAPS_API_KEY`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyCfZK9eq1sBWYplK3kxdkE7BJ6JkXGsNWs`
       );
       if (!response.ok) {
         throw new Error('Failed to fetch location details');

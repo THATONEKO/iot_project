@@ -1,6 +1,6 @@
 .bg {
   background-color: #E8E9EB;
-  height: 100vh;
+  height: 100vhq;
 }
 
 .mg {
@@ -24,4 +24,37 @@
 .img-container {
   height: 750px;
   width: 750px;
+}
+
+.custom-form-control {
+  padding: 0.25rem 0.5rem;  /* Adjust the padding as needed */
+  font-size: 0.875rem;  /* Adjust the font size as needed */
+  height: auto;  /* Ensure the height is auto-adjusted based on the padding and font size */
+  
+}
+
+.custom-list-group {
+  background-color: #E8E9EB;
+}
+
+.custom-list-group2 {
+  background-color: #d9d9d9;
+}
+
+.display-card {
+  background-color: #d9d9d9;
+  border-radius: 2%;
+  width: 200px;
+  border: none;
+}
+
+.suggest-tab {
+  background-color: #d9d9d9;
+}
+
+.current-tab {
+  border-left: 5px solid #d9d9d9;
+  background-color: #d9d9d9;
+  background-color: rgba(217, 217, 217, 0.5);
+
 }

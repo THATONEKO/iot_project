@@ -31,7 +31,12 @@ const MyGoogleMap = ({ searchQuery, setLocationName }) => {
         (error) => {
           console.error('Error getting current location:', error);
           setError('Error getting current location.');
-        }
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 5000,
+          maximumAge: 0
+        },
       );
     } else {
       console.error('Geolocation is not supported by this browser.');
@@ -94,7 +99,7 @@ const MyGoogleMap = ({ searchQuery, setLocationName }) => {
       <LoadScript googleMapsApiKey="AIzaSyCfZK9eq1sBWYplK3kxdkE7BJ6JkXGsNWs">
         <GoogleMap
           mapContainerStyle={mapStyles}
-          zoom={13}
+          zoom={16}
           center={searchedLocation || currentLocation} // Center on searched location if it exists
         >
           <Marker position={currentLocation} label="Current Location" /> {/* Marker for current location */}

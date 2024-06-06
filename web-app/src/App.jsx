@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import MyGoogleMap from './components/MyGoogleMap';
+import SearchIcon from './components/SearchIcon';
+import Tabs from './components/Tabs';
+
 
 
 function App() {
@@ -12,6 +15,7 @@ function App() {
     // Trigger the location search by setting searchQuery state
     setSearchQuery(locationName);
   };
+  const [activeTab, setActiveTab] = useState('Recent');
 
   return (
     <div className="bg full-height">
@@ -20,6 +24,7 @@ function App() {
         {/* upper row */}
         <div className="row">
           <div className="col pr-0">
+          
             <div className="input-group mb-3">
               <input
                 type="text"
@@ -31,6 +36,7 @@ function App() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 style={{width: "191px"}}
               />
+            
               <button className="btn btn-primary" type="button" id="button-addon2" onClick={handleSearch}>
                 Search
               </button>
@@ -38,6 +44,7 @@ function App() {
           </div>
           <div className="col">
             <h3>{locationName}</h3>
+            {/* <SearchIcon/> */}
           </div>
         </div>
       </div>
@@ -45,22 +52,15 @@ function App() {
       {/* lower row */}
       <div className="row lower-row">
         {/* Tab Column */}
-        <div className="col-lg-2">
+        <div className="col-lg-2" >
           <div className="row justify-content-center">
-            <ul className="list-group mg" style={{ width: "200px", border: "none", borderRadius: "0%" }}>
-              <li className="list-group-item current-tab" aria-current="true">
-                Recent
-              </li>
-              <li className="list-group-item custom-list-group">Marked</li>
-              <li className="list-group-item custom-list-group">Traveled</li>
-              <li className="list-group-item custom-list-group">Customize</li>
-            </ul>
+            <Tabs activeTab={activeTab} setActiveTab={setActiveTab}/>
           </div>
-          <div className="row justify-content-center">
-            <div className="card display-card">
+          <div className="row justify-content-center" style={{paddingTop: "12px"}}>
+            <div className="card display-card" style={{ width: "200px"}}>
   
               <ul className="list-group list-group-flush">
-              <li className="list-group-item custom-list-group2"><h5>Recent</h5></li>
+              <li className="list-group-item custom-list-group2"><h5>{activeTab}</h5></li>
                 <li className="list-group-item custom-list-group2 list-group">Lakeside</li>
                 <li className="list-group-item custom-list-group2">BEDCO</li>
                 <li className="list-group-item custom-list-group2">Home</li>

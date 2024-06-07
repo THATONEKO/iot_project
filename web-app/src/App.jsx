@@ -4,6 +4,7 @@ import './App.css';
 import MyGoogleMap from './components/MyGoogleMap';
 import SearchIcon from './components/SearchIcon';
 import Tabs from './components/Tabs';
+import EnterArrow from './components/EnterArrow';
 
 
 
@@ -37,8 +38,8 @@ function App() {
                 style={{width: "191px"}}
               />
             
-              <button className="btn btn-primary" type="button" id="button-addon2" onClick={handleSearch}>
-                Search
+              <button className="btn btn-primary" type="button" id="button-addon2" style={{backgroundColor: "white", border: "none", height: "36px"}} onClick={handleSearch}>
+                <EnterArrow/>
               </button>
             </div>
           </div>

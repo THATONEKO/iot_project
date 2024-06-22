@@ -1,0 +1,66 @@
+body {
+  background-color: #E8E9EB;
+
+}
+
+.mg {
+ padding-top: 50%;
+ padding-bottom: 50%;
+}
+
+.full-height {
+  height: 100vh; /* Full viewport height */
+}
+
+.upper-row {
+  height: 15%; /* 20% of the parent height */
+  align-items: center;
+}
+
+.lower-row {
+  height: 75%; /* 80% of the parent height */
+}
+
+.img-container {
+  height: 750px;
+  width: 750px;
+}
+
+.custom-form-control {
+  padding: 0.25rem 0.5rem;  /* Adjust the padding as needed */
+  font-size: 0.875rem;  /* Adjust the font size as needed */
+  height: auto;  /* Ensure the height is auto-adjusted based on the padding and font size */
+  
+}
+
+.custom-list-group {
+  background-color: #E8E9EB;
+}
+
+.custom-list-group2 {
+  background-color: #d9d9d9;
+}
+
+.display-card {
+  background-color: #d9d9d9;
+  border-radius: 2%;
+  width: 200px;
+  border: none;
+}
+
+.suggest-tab {
+  background-color: #d9d9d9;
+}
+
+.current-tab {
+  border-left: 5px solid #d9d9d9;
+  background-color: #d9d9d9;
+  background-color: rgba(217, 217, 217, 0.5);
+
+}
+
+/* @media (max-width: 991.98px) {
+  .lower-row .col-lg-2 {
+    display: none;
+  }
+} */

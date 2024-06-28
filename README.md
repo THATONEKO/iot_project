@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -11,3 +12,17 @@ Currently, two official plugins are available:
 # Intelligent-Traffic_System_App
 Web application for Intelligent Traffic System 
 >>>>>>> 4fea4d4 (Initial commit)
+=======
+# Intelligent-Traffic_System_App
+Web application for Intelligent Traffic System 
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+>>>>>>> a16cb6b (first commit)
+>>>>>>> f4b2331 (resolve merge)
